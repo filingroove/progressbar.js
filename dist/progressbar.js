@@ -231,7 +231,7 @@ Path.prototype.animate = function animate(progress, opts, cb) {
         if (utils.isFunction(cb)) {
             cb();
         }
-    });
+    }).catch(function( e ) {});
 };
 
 Path.prototype._getComputedDashOffset = function _getComputedDashOffset() {
